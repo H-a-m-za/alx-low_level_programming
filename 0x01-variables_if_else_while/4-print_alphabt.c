@@ -2,7 +2,6 @@
 #include <time.h>
 #include <stdio.h>
 /* more headers goes there */
-//git add . && git commit -m 'ah damn' && git push
 /**
  * main - prints the alphabet in lowercase without q and e.
  *
