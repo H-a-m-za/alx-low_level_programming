@@ -3,9 +3,9 @@
 #include <stdio.h>
 /* more headers goes there */
 /**
- * This is the entry point of the program.
+ * main - Prints if number is positive, zero or negative
  *
- * @return 0 on success.
+ * return - Always (Success)
  */
 
 int main(void)
@@ -14,7 +14,6 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	// Check number and print the number's status.
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);
@@ -29,6 +28,5 @@ int main(void)
 		printf("%d is negative\n", n);
 		}
 	}
-	// Return 0 on success.
 	return (0);
 }
