@@ -11,8 +11,9 @@
 int main(void)
 {
 	char* n = "_putchar\n";
+	int i;
 
-	for (int i = 0; n[i]!='\0'; i++)
+	for (i = 0; n[i]!='\0'; i++)
 	{
 		putchar(n[i]);
 	}
