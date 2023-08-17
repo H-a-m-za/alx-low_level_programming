@@ -17,7 +17,10 @@ if ((i == 50) || (i == 52))
 {
 continue;
 }
+else
+{
 _putchar(i);
+}
 }
 _putchar(10);
 }	
