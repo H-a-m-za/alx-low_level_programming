@@ -14,12 +14,12 @@ while (*s != '\0') {
 char *a = accept;
 while (*a != '\0') {
 if (*s == *a) {
-return s;
+return (s);
 }
 a++;
 }
 s++;
 }
 
-return 0;
+return (0);
 }

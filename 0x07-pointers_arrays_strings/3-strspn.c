@@ -31,5 +31,5 @@ break;
 s++;
 }
 
-return length;
+return (length);
 }
