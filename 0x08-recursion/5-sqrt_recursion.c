@@ -1,47 +1,44 @@
 #include "main.h"
 /**
- * _sqrt_recursion_helper - sqrt.
- * @n: number.
- * @start: start.
- * @end: end.
- * Return: sqrt(n) or -1.
+ *_evaluate - evaluate function sqrt
+ *@i: interger
+ *@n: interger
+ *Return: evaluate sqrt
  */
-int _sqrt_recursion_helper(int n, int start, int end)
-{
-int mid;
 
-if (start > end)
+int _evaluate(int i, int n)
 {
-return -1;
-}
+/*Evaluate function*/
+if (n == 0 || n == 1)
+return (n);
 
-mid = start + (end - start) / 2;
+else if (i * i < n)
+return (_evaluate(i + 1, n));
 
-if (mid * mid == n)
-{
-return mid;
-}
-else if (mid * mid < n)
-{
-return (_sqrt_recursion_helper(n, mid + 1, end));
-}
-else
-{
-return (_sqrt_recursion_helper(n, start, mid - 1));
-}
+else if (i * i == n) /*Condiction base*/
+return (i);
+
+return (-1);
+
+return (-1);
 }
 
 /**
- * _sqrt_recursion - sqrt.
- * @n: number.
- *
- * Return: sqrt(n) or -1.
- */
+ *_sqrt_recursion - evaluate sqrt
+ *@n: interger
+ *Return: Sgrt_recursion
+*/
+
 int _sqrt_recursion(int n)
 {
-if (n < 0)
+int i = 0;
+
+if (i < 0) /*If n is negative*/
+return (-1);
+
+else
 {
-return -1;
+return (_evaluate(i, n)); /*Recursive call*/
 }
-return (_sqrt_recursion_helper(n, 0, n));
+
 }
